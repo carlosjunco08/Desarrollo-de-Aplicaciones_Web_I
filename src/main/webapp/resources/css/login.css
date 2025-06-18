@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Para centrar el h1 y el formulario verticalmente */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px; /* Ancho similar al formulario */
+    box-sizing: border-box; /* Incluye padding en el ancho */
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el panelGrid (contenedor de etiquetas e inputs) */
+.ui-panelgrid {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ui-panelgrid td {
+    padding: 10px 0;
+    vertical-align: middle;
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilos para los campos de texto y contraseña */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Ajusta el ancho para el padding */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Estilos para los mensajes de error asociados a los inputs */
+.ui-message {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+/* Estilos para los mensajes globales */
+.ui-messages-error-detail {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el botón de iniciar sesión */
+.ui-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Espacio superior para separarlo del formulario */
+}
+
+.ui-button:hover {
+    background-color: #0056b3;
+}
